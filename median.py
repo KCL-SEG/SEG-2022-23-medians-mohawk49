@@ -10,3 +10,10 @@ while True:
     else:
         break
 print(numbers)
+numbers.sort()
+if len(numbers)%2==1:
+    index = math.floor(len(numbers)/2)
+    print(f'The median is {numbers[index]}')
+else:
+    median = (numbers[int(len(numbers)/2)] + numbers[int(len(numbers)/2)-1]) / 2
+    print(f'The median is {median}')
